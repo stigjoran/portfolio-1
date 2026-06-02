@@ -103,6 +103,49 @@ nav ul {
     font-weight: 600;
 }
 
+#projects {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.project-list {
+    display: grid;
+    gap: var(--space-lg);
+    margin-top: var(--space-lg);
+}
+
+.project-card {
+    background-color: var(--color-surface);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.project-card img {
+    width: 100%;
+}
+
+.project.card h3,
+.project-card p,
+.project-links {
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+}
+
+.project-card h3 {
+    margin-top: var(--space-md);
+}
+
+.project-card p {
+    margin: var(--space-sm) 0;
+}
+
+.project-links {
+    margin-top: var(--space-md);
+    margin-bottom: var(--space-md);
+    display: flex;
+    gap: var(--space-sm);
+}
+
 @media (min-width: 768px) {
     #hero h1 {
         font-size: 4rem;
